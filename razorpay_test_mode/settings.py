@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-q6#a6zb0y)408khbg81-h@bq0ll!x1erk6$k0l9uy=(0267)7r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ec2-13-210-219-140.ap-southeast-2.compute.amazonaws.com',]
 
 
 # Application definition
@@ -125,3 +125,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 RAZOR_KEY_ID = "rzp_test_1OVwoKXbCbohMs"
 RAZOR_KEY_SECRET = "vASQZ1q8hY0fzZMdDXLYPdyk"
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
